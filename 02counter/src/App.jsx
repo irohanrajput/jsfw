@@ -8,18 +8,20 @@ function App() {
   // const [variable, setMethod] = useState(default_value)
   // 'variable' ek variable hai jise 'setMethod' control karega
 
-  let [counter, setCounter] = useState(0)
+  let [counter, rohanCounter] = useState(0)
+  // let [counter, setCounter] = useState(0)
 
   const addValue = () =>{
-    setCounter(counter + 1)
+    rohanCounter(counter + 1)
   }
 
   const removeValue = () =>{
-    setCounter(counter-1)
+    counter +=1
+    rohoanCounter(counter)
     }
 
   const resetValue = () => {
-    setCounter(counter = 0)
+    rohanCounter(counter = 0)
   }
     
   
