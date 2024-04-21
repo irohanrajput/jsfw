@@ -15,14 +15,17 @@ function App() {
     rohanCounter(counter + 1)
   }
 
-  const removeValue = () =>{
-    counter +=1
-    rohoanCounter(counter)
+  const decreaseValue = () =>{
+    if (counter < 1){
+      alert("value can't be negative")
     }
+    else{
+    rohanCounter(counter -1)
+    }}
 
   const resetValue = () => {
     rohanCounter(counter = 0)
-  }
+  } 
     
   
 
@@ -33,9 +36,9 @@ function App() {
 
     <button onClick={addValue}>add value</button>
     <br /> <br />
-    <button onClick={resetValue}> Reset Value</button>
+    <button onClick={resetValue}> Reset Value </button>
     <br /> <br />
-    <button onClick={removeValue}>remove value</button>
+    <button onClick={decreaseValue}>decrease value</button>
     </>
   )
 }
